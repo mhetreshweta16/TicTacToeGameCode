@@ -23,5 +23,16 @@ namespace TicTacToeGame
             board[9] = ' ';
 
         }
+        public void chooseLetter()
+        {
+            Console.WriteLine("hello player,enter your letter for game");
+            char playerletter =Convert.ToChar(Console.ReadLine());
+
+            Console.WriteLine("the Player letter is " + playerletter);
+
+            char compuetLetter = 'o';
+            Console.WriteLine("the computer letter is " + compuetLetter);
+
+        }
     }
 }
