@@ -27,10 +27,24 @@ namespace TicTacToeGame
         {
             Console.WriteLine("hello player,enter your letter for game");
             char playerletter =Convert.ToChar(Console.ReadLine());
+            char compuetLetter=' ';
+
+            if (playerletter == 'x')
+            {
+                compuetLetter = 'o';
+            }
+            else if (playerletter == 'o')
+            {
+                compuetLetter = 'x';
+            }
+            else
+            {
+                Console.WriteLine("enter valid letter");
+            }
 
             Console.WriteLine("the Player letter is " + playerletter);
 
-            char compuetLetter = 'o';
+            
             Console.WriteLine("the computer letter is " + compuetLetter);
 
         }
